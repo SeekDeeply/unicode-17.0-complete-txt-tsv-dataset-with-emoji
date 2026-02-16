@@ -1,0 +1,178 @@
+================================================================
+              Unicode 17.0 Complete Character Set Introduction
+              Unicode 17.0 全字符总表文件介绍
+================================================================
+Generated: 2026-02-13
+生成日期: 2026-02-13
+Data Source: UCD 17.0 + Unihan 17.0 (Official Release)
+数据来源: UCD 17.0 + Unihan 17.0 (官方正式版)
+Total Characters: 142,706 allocated characters
+字符总数: 142,706 个已分配字符
+Content: All scripts + Control characters + Noncharacters(66) + Surrogate boundaries + Private Use boundaries
+包含内容: 所有文字系统 + 控制字符 + 非字符(66) + 代理区边界 + 私用区边界
+================================================================
+
+
+------------------------
+1. Machine-Readable Version (TSV format)
+   机器可读版 (TSV格式)
+------------------------
+Filename: unicode_17_machine_raw.tsv
+文件名: unicode_17_machine_raw.tsv
+Size: 5.2 MB
+文件大小: 5.2 MB
+Lines: 142,610 rows
+总行数: 142,610 行
+
+【Format / 格式说明】
+Column 1: Character itself (control characters preserved as-is)
+第1列: 字符本身 (控制字符原样保留)
+Column 2: Codepoint (hexadecimal, e.g., 0000, 4E00, 1F600)
+第2列: 码位 (十六进制, 如 0000, 4E00, 1F600)
+Column 3: Character name (UCD official name)
+第3列: 字符名称 (UCD官方名称)
+
+【Sample / 文件样例】
+       0000    <control>
+        0009    <control>
+        000A    <control>
+一       4E00    CJK UNIFIED IDEOGRAPH-4E00
+😀       1F600   grinning face
+         FFFE    <noncharacter-FFFE>
+
+【Features / 特点】
+✓ Tab-separated, ideal for program import
+✓ 制表符分隔，适合程序导入
+✓ All control characters preserved as-is (U+0009 is a real tab)
+✓ 所有控制字符原样保留 (U+0009是真正的制表符)
+✓ Complete list of 66 noncharacters included
+✓ 包含66个非字符完整列表
+✓ Surrogate/Private Use boundaries included
+✓ 包含代理区/私用区边界
+✓ Suitable for databases, scripts, programming
+✓ 适合数据库、脚本、编程处理
+
+
+------------------------
+2. Human-Readable Version (with categorized formatting)
+   人类可读版 (带分类排版)
+------------------------
+Filename: unicode_17_human_raw.txt
+文件名: unicode_17_human_raw.txt
+Size: 10 MB
+文件大小: 10 MB
+Lines: ~570,000 rows (with blank lines for readability)
+总行数: 约 570,000 行 (含排版空行)
+
+【Format / 格式说明】
+Each character in a separate paragraph with category icons:
+每字符独立段落，带分类图标:
+
+⚙️ Control Characters     - U+0000 to U+001F, U+007F, U+0080-U+009F
+⚙️ 控制字符      - U+0000 到 U+001F, U+007F, U+0080-U+009F
+🈴 CJK Ideographs         - All CJK unified ideographs (100,000+)
+🈴 CJK汉字       - 所有CJK统一汉字 (100,000+)
+🚫 Noncharacters          - 66 permanently reserved noncharacters
+🚫 非字符        - 66个永久保留的非字符
+🏠 Private Use            - Private Use Area boundaries
+🏠 私用区        - 私用区边界码位
+🔗 Surrogates             - Surrogate Area boundaries
+🔗 代理区        - 代理区边界码位
+📌 Other                  - Other scripts and symbols
+📌 其他          - 其他文字符号
+
+【Sample / 文件样例】
+============================================================
+Unicode 17.0 Complete Character Set (Human-Readable Version)
+Unicode 17.0 全字符总表（人类可读版）
+============================================================
+
+  U+0000
+      ⚙️ Control Character
+      ⚙️ 控制字符
+      📝 <control>
+
+	  U+0009
+      ⚙️ Control Character
+      ⚙️ 控制字符
+      📝 <control>
+
+一  U+4E00
+      🈴 CJK Ideograph
+      🈴 CJK汉字
+      📝 CJK UNIFIED IDEOGRAPH-4E00
+
+😀  U+1F600
+      📌 Other
+      📌 其他
+      📝 grinning face
+
+    U+FFFF
+      🚫 Noncharacter
+      🚫 非字符
+      📝 <noncharacter-FFFF>
+
+【Features / 特点】
+✓ Icons for each category, easy to identify
+✓ 带图标分类，一目了然
+✓ Control characters explicitly marked
+✓ 控制字符显式标注
+✓ Suitable for reading, reference, sharing, printing
+✓ 适合阅读、查证、分享、打印
+
+
+------------------------
+3. Single-Line Continuous String Version
+   单行连续字符串版
+------------------------
+Filename: unicode_17_string_raw.txt
+文件名: unicode_17_string_raw.txt
+Size: 512 KB
+文件大小: 512 KB
+Lines: 1 row
+总行数: 1 行
+Total Characters: 142,706 characters
+字符总数: 142,706 个字符
+
+【Content / 文件内容】
+All characters concatenated in codepoint order, no separators, no line breaks.
+所有字符按码位顺序连续拼接，无分隔符，无换行。
+
+【File Start (hexadecimal) / 文件开头 (十六进制)】
+00000000  00 01 02 03 04 05 06 07  08 09 0a 0b 0c 0d 0e 0f  |................|
+00000010  10 11 12 13 14 15 16 17  18 19 1a 1b 1c 1d 1e 1f  |................|
+00000020  20 21 22 23 24 25 26 27  28 29 2a 2b 2c 2d 2e 2f  | !"#$%&'()*+,-./|
+00000030  30 31 32 33 34 35 36 37  38 39 3a 3b 3c 3d 3e 3f  |0123456789:;<=>?|
+
+【File Start (cat -A display) / 文件开头 (cat -A 显示)】
+^@^A^B^C^D^E^F^G^H^I^J^K^L^M^N^O^P^Q^R^S^T^U^V^W^X^Y^Z^[^\^]^^^_ !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFG...
+
+【Features / 特点】
+✓ All characters in a single line
+✓ 一行搞定所有字符
+✓ Control characters preserved as-is (^I is tab, ^J is line feed)
+✓ 控制字符原样保留 (^I 是制表符, ^J 是换行符)
+✓ Suitable for string processing, regex testing, font validation
+✓ 适合字符串处理、正则测试、字体验证
+✓ Easy to copy, transfer, quick preview
+✓ 方便复制、传输、快速预览
+
+
+================================================================
+                        Three Versions Comparison
+                        三版本对比
+================================================================
+File / 文件                       Format / 格式    Lines / 行数    Size / 大小    Main Usage / 主要用途
+---------------------------    ----    --------    -----   ----------------
+unicode_17_machine_raw.tsv     TSV      142,610    5.2MB   Program import / Database / 程序导入/数据库
+unicode_17_human_raw.txt       Text     ~570,000    10MB    Reading / Reference / Sharing / 阅读/查证/分享
+unicode_17_string_raw.txt      Raw          1      512KB   String processing / Testing / 字符串处理/测试
+================================================================
+
+All files are UTF-8 encoded, containing all allocated characters of Unicode 17.0
+所有文件均为 UTF-8 编码，包含完整的 Unicode 17.0 所有已分配字符
+Total 142,706 characters, including Hiragana, Katakana, Hangul, CJK Ideographs, Control Characters, etc.
+共计 142,706 个字符，含平假名、片假名、韩文、CJK汉字、控制字符等
+66 noncharacters complete, Surrogate/Private Use boundaries complete
+非字符66个完整，代理区/私用区边界完整
+================================================================

@@ -12,8 +12,8 @@ Unicode 17.0 + Emoji 17.0 完整数据集
 </p>
 
 <p align="center">
-  <b>🚀 The most complete, meticulously curated dataset for Unicode 17.0 and Emoji 17.0</b><br>
-  <b>🚀 最完整、精心整理的 Unicode 17.0 和 Emoji 17.0 数据集</b>
+  <b>🚀 The most complete, professionally curated dataset for Unicode 17.0 and Emoji 17.0</b><br>
+  <b>🚀 最完整、专业整理的 Unicode 17.0 和 Emoji 17.0 数据集</b>
 </p>
 
 ---
@@ -21,7 +21,7 @@ Unicode 17.0 + Emoji 17.0 完整数据集
 📖 Overview | 概述
 
 This repository provides the absolute most complete and professionally processed dataset for Unicode 17.0 and Emoji 17.0, directly derived from official UCD and Unihan sources.
-It includes every allocated character, all control codes, 66 noncharacters, surrogate/private use boundaries, and the full Emoji 17.0 data (fully-qualified, minimally-qualified, unqualified, component).
+It includes every allocated character, all control codes, 66 noncharacters, surrogate/private use boundaries, and the full Emoji 17.0 data (fully‑qualified, minimally‑qualified, unqualified, component).
 Perfect for font developers, linguists, text processing researchers, and anyone who needs the ultimate Unicode reference.
 
 本仓库提供 绝对最完整、专业处理 的 Unicode 17.0 和 Emoji 17.0 数据集，直接源自官方 UCD 和 Unihan 源文件。
@@ -30,40 +30,41 @@ Perfect for font developers, linguists, text processing researchers, and anyone 
 
 ---
 
-✨ Key Features | 核心特性
+✨ Core Features | 核心特性
 
-🏆 Feature 特点
-✅ Absolute Completeness All allocated characters + control chars + 66 noncharacters + surrogate/private use boundaries ✅ 绝对完整 所有已分配字符 + 控制字符 + 66个非字符 + 代理区/私用区边界
-✅ Latest Version Based on Unicode 17.0 (September 2025) ✅ 最新版本 基于 Unicode 17.0（2025年9月发布）
-✅ Multiple Formats Machine‑readable TSV, human‑readable text, single‑line continuous string, block‑separated versions ✅ 多格式可用 机器可读 TSV、人类可读排版、单行连续字符串、按区块分行版
-✅ Exact Classification Every character labeled with official block names (Chinese/English) ✅ 精确分类 每个字符按官方区块名标注（中英双语）
-✅ Full Emoji Coverage All statuses: fully‑qualified, minimally‑qualified, unqualified, component ✅ Emoji 全覆盖 所有状态：fully‑qualified、minimally‑qualified、unqualified、component
-✅ Pure Original Control characters preserved as‑is, no filtering, no modification ✅ 原汁原味 控制字符原样保留，无过滤，无修改
+🇬🇧 English 🇨🇳 中文
+✅ Absolute Completeness – All allocated characters, control chars, 66 noncharacters, surrogate/private use boundaries ✅ 绝对完整 – 所有已分配字符、控制字符、66个非字符、代理区/私用区边界
+✅ Latest Version – Based on Unicode 17.0 (September 2025) ✅ 最新版本 – 基于 Unicode 17.0（2025年9月发布）
+✅ Multiple Formats – Machine‑readable TSV, human‑readable text, single‑line continuous string, block‑separated versions ✅ 多格式可用 – 机器可读 TSV、人类可读排版、单行连续字符串、按区块分行版
+✅ Exact Classification – Every character labeled with official block names (Chinese/English) ✅ 精确分类 – 每个字符按官方区块名标注（中英双语）
+✅ Full Emoji Coverage – All statuses: fully‑qualified, minimally‑qualified, unqualified, component ✅ Emoji 全覆盖 – 所有状态：fully‑qualified、minimally‑qualified、unqualified、component
+✅ Pure Original – Control characters preserved as‑is, no filtering, no modification ✅ 原汁原味 – 控制字符原样保留，无过滤，无修改
 
 ---
 
-📁 Repository Structure | 仓库结构
+📁 Repository Contents | 仓库内容
 
 ```
 unicode-17.0-complete-txt-tsv-dataset-with-emoji/
-├── 📂 Unicode-17.0-Full-Dataset/           # Complete Unicode 17.0 character data
-│   ├── Introduction.txt                     # Detailed documentation (bilingual)
-│   ├── unicode_17_machine_raw.tsv           # Machine-readable TSV (142,610 rows)
-│   ├── unicode_17_human_raw.txt              # Human-readable version (~570,000 lines)
-│   ├── unicode_17_string_raw.txt             # Single-line continuous string (142,706 chars)
-│   ├── unicode_17_string_blocked_raw.txt     # Block-separated string version
-│   └── Unicode 17.0 Blocks.txt                # Official block list (Chinese/English)
-│
-├── 📂 Emoji-17.0-Full-Dataset/             # Complete Emoji 17.0 data
-│   ├── Introduction.txt                     # Detailed documentation (bilingual)
-│   ├── emoji_17_machine.tsv                  # Full dataset TSV (5,228 rows)
-│   ├── emoji_17_human.txt                     # Full dataset human-readable
-│   ├── emoji_17_single_machine.tsv            # Single-codepoint only TSV (1,400 rows)
-│   ├── emoji_17_single_human.txt              # Single-codepoint human-readable
-│   ├── emoji_17_single_string.txt             # Single-line string (1,400 chars)
-│   └── emoji_17_single_string_annotated.txt   # Annotated single-line string
-│
-└── README.md                                 # This file
+├── 📂 Emoji-17.0-Full-Dataset/
+│   ├── Introduction.txt
+│   ├── emoji_17_machine.tsv
+│   ├── emoji_17_human.txt
+│   ├── emoji_17_single_machine.tsv
+│   ├── emoji_17_single_human.txt
+│   ├── emoji_17_single_string.txt
+│   └── emoji_17_single_string_annotated.txt
+├── 📂 Unicode-17.0-Full-Dataset/
+│   ├── Introduction.txt
+│   ├── unicode_17_machine_raw.tsv
+│   ├── unicode_17_human_raw.txt
+│   ├── unicode_17_string_raw.txt
+│   ├── unicode_17_string_blocked_raw.txt
+│   └── Unicode 17.0 Blocks.txt
+├── LICENSE
+├── NOTICE.txt
+├── README.md
+└── checksum_sha256.txt
 ```
 
 ---
@@ -98,7 +99,7 @@ File Format Size Lines Best For
 unicode_17_machine_raw.tsv TSV 5.2 MB 142,610 Program import / Database
 unicode_17_human_raw.txt Text 10 MB ~570,000 Reading / Reference / Sharing
 unicode_17_string_raw.txt Raw 512 KB 1 String processing / Testing
-unicode_17_string_blocked_raw.txt Text ~512 KB ~330 Block-separated exploration
+unicode_17_string_blocked_raw.txt Text ~512 KB ~330 Block‑separated exploration
 
 Sample | 样例
 
@@ -129,9 +130,9 @@ File Family | 文件家族
 File Size Lines Purpose
 emoji_17_machine.tsv 428 KB 5,228 Full dataset (machine)
 emoji_17_human.txt 621 KB 26,358 Full dataset (human)
-emoji_17_single_machine.tsv 61 KB 1,400 Single-codepoint (machine)
-emoji_17_single_human.txt 111 KB ~5,600 Single-codepoint (human)
-emoji_17_single_string.txt 5.4 KB 1 Single-line string
+emoji_17_single_machine.tsv 61 KB 1,400 Single‑codepoint (machine)
+emoji_17_single_human.txt 111 KB ~5,600 Single‑codepoint (human)
+emoji_17_single_string.txt 5.4 KB 1 Single‑line string
 emoji_17_single_string_annotated.txt 5.6 KB ~20 Annotated string
 
 Status Breakdown | 状态分布
@@ -182,7 +183,7 @@ The raw data is derived from the Unicode Character Database, which is subject to
 
 · Unicode Consortium for the official UCD and Unihan data.
 · All contributors who helped refine and verify this dataset.
-· You, for your interest in high-quality Unicode data!
+· You, for your interest in high‑quality Unicode data!
 · Unicode 联盟 提供的官方 UCD 和 Unihan 数据。
 · 所有帮助完善和验证本数据集的贡献者。
 · 你，对高质量 Unicode 数据感兴趣的你！
